@@ -1,44 +1,59 @@
-\documentclass[twocolumn]{article}
-%\documentclass{article}
-%\usepackage[total={18cm,21cm},top=2cm, left=2cm]{geometry}
-\usepackage{latexsym,amsmath,amssymb,amsfonts}
-\usepackage[latin1]{inputenc}
-\usepackage[T1]{fontenc}
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage[left = 3.00cm,right = 3.00cm,top = 3.00cm,bottom = 3.00cm]{geometry}
 \usepackage{graphicx}
-%\usepackage[lined,boxed]{algorithm2e}
-%\usepackage[linesnumbered]{algorithm2e}
+\usepackage[pdftex]{color}
 
-\inputencoding{utf8}
-\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
-\usepackage{algorithmic}
-\usepackage[spanish]{babel} % Idioma español
-\renewcommand{\baselinestretch}{1.0} % espaciado 1.1
-\pagestyle{myheadings}
-% \markright{...... texto .......}
-\usepackage{enumerate}
-\newcommand\tab[1][1cm]{\hspace*{#1}}
-%-------------------------------------------------------------------
+\newtheorem{teor}{Teorema}[section]
+\newtheorem{lema}{Lema}[section]
+\newtheorem{defi}{Definici�n}[section]
+\newtheorem{ejem}{Ejemplo}[section]
+\newtheorem{propi}{Propiedad}[section]
+
+\newcommand{\ds}{\displaystyle}
+
 \begin{document}
-
-%titulo
-\title{Universidad Nacional de Ingeniería\\
-Introducción a la Estadística y Probabilidades\\
-Inferencia Variacional}
-\author{
-Steve Anthony Luzquiños Agama\\
-Jimenez Chacon joel\\
-%\thanks{"Primer avance 21/09/18"}
-\\stevelaxd@gmail.com
-\\joel\_Capricornio\_2@hotmail.com
-}
-\date{21/09/18}
-
-\maketitle
-
-
-%Seccion Introducción
-\section{Introducción}
-Supongo que aquí pondremos la introducción cuando la tengamos :u
-%Fin del documento
-\vfill{Primera Entrega} \footnote{21/09/18}
+	\begin{center}
+		{\bf UNIVERSIDAD NACIONAL DE INGENIERIA\\
+		FACULTAD DE CIENCIAS}
+	\end{center}
+	\begin{center}
+		\includegraphics[scale=0.1]{uni.png}
+	\end{center}		
+	\begin{center}
+		\rule{15cm}{0.8mm}\\
+		\vspace*{3mm}
+		{\bf ESTADISTICA VARIACIONAL\\
+		REGRESION LINEAL VARIACIONAL\\
+		REGRESION LOGISTICA VARIACIONAL}
+		\rule{15cm}{0.8mm}\\
+		\vspace*{4mm}
+		{\bf Curso:}\\
+		INTRODUCCION A LA PROBABILIDAD Y ESTADISTICA\\
+		\vspace*{4mm}
+		{\bf Integrantes:}\\
+		\begin{flushleft}
+			\hspace{5cm}$\bullet$ LOPEZ PUNIN RENEE JAIR\\
+			\hspace{5cm}$\bullet$ LOAYZA FERNANDO\\
+			\hspace{5cm}$\bullet$ JIMENEZ JOEL\\
+			\hspace{5cm}$\bullet$ LUZQUINOS\\
+		\end{flushleft}
+		\vspace*{4mm}
+		{\bf Profesor:}\\
+		LARA AVILA CESAR\\
+		\vspace*{6cm}
+		LIMA-PERU\\
+		CICLO 2018-II
+	\end{center}
+	\newpage
+	{\bf INTRODUCCION}\\
+	\textbf{Modelo de regresion lineal}\\
+	El modelo de regresion lineal explica la relacion entre una variable dependiente, a la
+	que se denotara y, con otra(s) explicativa(s) a traves de una ecuacion de primer orden.
+	Tanto las variables dependientes como las explicativas son observables.
 \end{document}
